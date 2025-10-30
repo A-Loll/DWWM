@@ -1,0 +1,167 @@
+/* --------------------------------------------------------------
+Import de la font Montserrat depuis Google Fonts
+-------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* --------------------------------------------------------------
+Layout de la page
+-------------------------------------------------------------- */
+
+/* Déclarations CSS qui seront hérités par l'ensemble des éléments html enfant */
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+}
+
+/* --------------------------------------------------------------
+Header
+-------------------------------------------------------------- */
+
+/* Déclarations CSS qui s'appliquent à l'en-tête du site */
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #ddd;
+    color: #ccc;
+    padding: 2em 0;
+}
+/* Déclarations CSS qui centre le titre de la page */
+h1 {
+    text-align: center;
+}
+/* Déclarations CSS qui remplace le mot "Pantone" par son logo dans le titre */
+h1 span {
+    height: 43px;
+    width: 250px;
+    background: url(../img/logo-pantone.png) no-repeat;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    text-indent: -999em;
+}
+
+/* --------------------------------------------------------------
+Contenu histoire et principe du Pantone
+-------------------------------------------------------------- */
+
+/* Déclarations CSS qui s'applique au conteneur des blocs histoire et principe */
+main {
+    width: 60vw;
+    margin: auto;
+}
+/* Déclarations CSS qui s'appliquent à l'ensemble des éléments html <mark> */
+mark {
+    border-radius: 3px;
+    padding: 0 0.25em;
+}
+/* Les déclarations CSS des 4 sélecteurs qui suivent attribuer leur couleurs
+   aux mots cyan, magenta, jaune et noir contenus dans des éléments <mark> */
+.cyan {
+    background: cyan;
+}
+.magenta {
+    background: magenta;
+}
+.yellow {
+    background: yellow;
+}
+.black {
+    background: black;
+    color: white;
+}
+
+/* --------------------------------------------------------------
+Styles pantone of the year
+-------------------------------------------------------------- */
+
+/* Déclarations CSS qui permet d'organiser tous les éléments HTML 
+   contenant les informations sur le Pantone de l'année sous forme de grille */
+
+.pantone-of-the-year-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+/* Déclarations CSS qui doivent appliquer une mise en forme 
+   à tous les titres des blocs Pantone de l'année */
+
+.pantone-of-the-year-item > h3 {
+    height: 2.5em;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.25em;
+}
+
+/* Déclarations CSS qui doivent appliquer une mise en forme 
+   à toutes les références des blocs Pantone de l'année */
+
+.pantone-of-the-year-item .ref {
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Déclarations CSS qui doivent appliquer une mise en forme 
+   à toutes les descriptions des blocs Pantone de l'année
+   (indice : utiliser un combinateur +) */
+
+.pantone-of-the-year-item .ref + p {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+/* Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2020 */
+.year-2020 > h3 {
+    background: #0f4c81;
+}
+.year-2020:hover > .ref {
+    color: #0f4c81;
+}
+/* Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2019 */
+.year-2019 > h3 {
+    background: #ff6f61;
+}
+.year-2019:hover > .ref {
+    color: #ff6f61;
+}
+/* Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2018 */
+.year-2018 > h3 {
+    background:#604c8d;
+}
+.year-2018:hover > .ref {
+    color: #604c8d;
+}
+/* Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2017 */
+.year-2017 > h3 {
+    background: #88b04b;
+}
+.year-2017:hover > .ref {
+    color: #88b04b;
+}
+/* Déclaration CSS qui donne sa couleur de fond 
+   au titre du bloc pantone de l'année 2016 */
+.year-2016 > h3 {
+    background: rgb(147,169,209);
+    background: linear-gradient(90deg, rgba(147,169,209,1) 0%, rgba(147,169,209,1) 50%, rgba(247,202,202,1) 50%, rgba(247,202,202,1) 100%);
+}
+.year-2016:hover > .ref {
+    color: transparent;
+    background-image: linear-gradient(90deg, rgba(147,169,209,1) 0%, rgba(147,169,209,1) 50%, rgba(247,202,202,1) 50%, rgba(247,202,202,1) 100%);
+    background-clip: text;
+}
+/* BONUS : faire en sorte que la couleur des titres des blocs 
+Pantone de l'année deviennent de la couleur associée au survol des blocs */
