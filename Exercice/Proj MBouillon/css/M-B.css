@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background-image: url("../ressources/testimonal_background_dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #f4d03f;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #f4d03f;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main section {
+  background: rgba(0, 0, 0, 0.65);
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
+  text-align: center;
+  color: #f4d03f;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.plats-carte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.plat-carte {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.plat-carte:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.plat-carte h3 {
+  color: #f4d03f;
+  margin-bottom: 0.5rem;
+}
+
+.plat-carte img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0.5rem 0 1rem;
+}
+
+.Galerie {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.Galerie h3 {
+  color: #f4d03f;
+  margin-bottom: 1rem;
+}
+
+.Galerie img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.Galerie img:hover {
+  transform: scale(1.05);
+}
+
+#témoignages div {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+#témoignages img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 2rem 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .plats-carte {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plat-carte {
+    width: 90%;
+  }
+
+  .Galerie img {
+    width: 45%;
+  }
+}
