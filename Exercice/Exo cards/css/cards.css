@@ -65,3 +65,57 @@ body {
   grid-column: 2 / 4;
   justify-self: center;
 }
+/* Grand écrans (≥1200px) */
+@media (min-width: 1200px) {
+  .cards1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablettes (entre 768px et 1199px) */
+@media (max-width: 1199px) {
+  .cards1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .super-héros:last-child {
+    grid-column: auto;
+    justify-self: stretch;
+  }
+
+  .super-héros-img {
+    height: 250px;
+  }
+}
+
+/* Smartphones (≤767px) */
+@media (max-width: 767px) {
+  .cards1 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .super-héros-img {
+    height: 220px;
+  }
+
+  .super-héros h2,
+  .super-héros-shiny h2 {
+    font-size: 1.1em;
+    padding: 0px 20px;
+  }
+
+  .super-héros h3,
+  .super-héros-shiny h3,
+  .super-héros p,
+  .super-héros-shiny p {
+    padding: 0px 20px;
+  }
+
+  .super-héros:last-child {
+    grid-column: auto;
+  }
+}
