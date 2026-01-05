@@ -9,10 +9,10 @@
 <body>
     <header>
     <nav>
-        <a href="Biographie">Biographie</a>
-        <a href="Portraits">Portraits</a>
-        <a href="Landscape">Landscape</a>
-        <a href="Contact">Contact</a>
+        <a href="Biographie"><b>Biographie</b></a>
+        <a href="Portraits"><b>Portraits</b></a>
+        <a href="Landscape"><b>Landscape</b></a>
+        <a href="Contact"><b>Contact</b></a>
     </nav>
         <h1>ARIETTE<br>DESCHAMPS</h1>
         <h2>PHOTOGRAPHE</h2>
@@ -20,11 +20,22 @@
     </header>
     <main>
         <section id="biographie">
-            <h2>Biographie</h2>
-            <p><img src="img/photographer.jpg" alt="Photo de moi tenant un appareil photo">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src="img/photographer.jpg" alt="Photo de moi tenant un appareil photo">
+                <div class="texte">
+                    <h2>BIOGRAPHIE</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae erat quis nisi volutpat fermentum sed quis odio. 
+                        Vivamus vulputate urna erat, ac accumsan arcu ultrices nec. Duis consequat enim felis, vel porttitor massa luctus vitae. 
+                        Donec efficitur malesuada urna. Suspendisse gravida quam ac lectus blandit aliquet eget at risus. Duis mattis odio eget enim tempor volutpat. 
+                        Pellentesque finibus sagittis lacus, at accumsan neque molestie at. Duis ultrices, nibh id tincidunt gravida, urna ipsum ullamcorper turpis, sit amet consectetur libero ex vitae ipsum.<br>
+
+                        <br>Maecenas molestie tempus nisi, a viverra elit cursus sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Cras eu turpis elementum, condimentum sem luctus, semper neque. Cras ornare cursus nunc, quis efficitur lacus. 
+                        Proin urna tortor, convallis sed neque nec, pulvinar tristique neque. Aenean efficitur purus vitae elit efficitur interdum. 
+                        Maecenas a nunc vulputate, tristique ex vitae, sollicitudin magna. Nulla scelerisque placerat neque sit amet ornare. 
+                        Nunc a tellus condimentum, facilisis urna a, auctor sapien. Sed vestibulum dignissim augue, a volutpat ligula maximus id.</p>
+                    <button type="button" class="btn btn-primary">Voir mes photos</button>
+                </div>
         </section>
 
         <section id="Portraits">
@@ -56,13 +67,26 @@
             <img src="img/landscapes/landscape9.jpg" alt="Photo d'un paysage">
             </div>
         </section>
+
+        <section id="Contact">
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
     </main>
-    <footer id="Contact">
+    <footer>
         <nav>
-            <a href="Biographie">Biographie</a>
-            <a href="Portraits">Portraits</a>
-            <a href="Landscape">Landscape</a>
-            <a href="Contact">Contact</a>
+            <a href="Biographie"><b>Biographie</b></a>
+            <a href="Portraits"><b>Portraits</b></a>
+            <a href="Landscape"><b>Landscape</b></a>
+            <a href="Contact"><b>Contact</b></a>
         </nav>
         <p>Mentions Légales - Copyright La Manu</p>
     </footer>

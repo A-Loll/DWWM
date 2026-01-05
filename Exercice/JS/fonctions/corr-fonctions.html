@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Les Fonctions</title>
+</head>
+<body>
+    <script>
+        // Exercice 1 Créer une fonction nommée "helloWorld" qui retourne "Bonjour tout le monde". 
+        // Appeler cette fonction et afficher sa réponse dans la console.
+
+        function helloWorld() {
+            return "Bonjour tout le monde";
+        }
+
+        let texte=helloWorld();
+        console.log(texte);
+
+        // Exercice 2 Créer une fonction nommée "helloYou" qui attend un argument "firstname". 
+        // Appeler cette fonction et afficher une réponse dans la console du type "Bonjour Steve". 
+
+        function helloYou(firstname) {
+            console.log("Bonjour "+firstname+".");
+            console.log(`Bonjour ${firstname}.`);
+        }
+
+        helloYou("Steve");
+
+        // Exercice 3 Créer une fonction nommée "average" qui attend 2 nombres en arguments. 
+        // Appeler cette fonction permettant de retourner la moyenne de ces 2 nombres. 
+        // Afficher une phrase dans la console rappelant le calcul, ainsi que le résultat.
+
+        function average(nombre1, nombre2) {
+            let moyenne=(nombre1+nombre2)/2;
+            return moyenne;
+        }
+
+        let a=12;
+        let b=14;
+        let moy=average(a,b);
+        console.log("La moyenne de "+a+" et "+b+" est : "+moy);
+
+
+        // Exercice 4 Créer une fonction fléchée permettant de retourner une chaine passée en argument, 
+        // suivie de sa longueur entre parenthèses Afficher le résultat dans la console.
+
+        let maFonction = argument => argument+" ("+argument.length+")";
+        let maFonction = (argument) => {
+            let longueur=argument.length;
+            let texte=argument+" ("+longueur+")";
+            return texte;
+        }
+
+        console.log(maFonction("coucou"));
+
+        // Exercice 5 Traduire cette fonction fléchée en fonction nommée: 
+        // howAreYou  = (name) =>  `Bonjour, ${name} ! Comment vas-tu ?`; 
+        // Afficher le résultat dans la console.
+
+        function howAreYou(name) {
+            return `Bonjour, ${name} ! Comment vas-tu ?`;
+        }
+
+        console.log(howAreYou("Steve"));
+
+        // Exercice 6 Traduire la fonction nommée de l'exercice 3, en fonction fléchée. 
+        // Afficher une phrase dans la console rappelant le calcul, ainsi que le résultat.
+
+        let average = (nombre1, nombre2) => (nombre1+nombre2)/2;
+        let average = (nombre1, nombre2) => { 
+            let moyenne=(nombre1+nombre2)/2; 
+            return moyenne;
+        }
+
+    </script>
+</body>
+</html>

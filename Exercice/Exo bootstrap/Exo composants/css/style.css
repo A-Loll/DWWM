@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #9fc376;
+}
+
+.collapse {
+  background-color: #9fc376;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-success, .btn-primary {
+  background-color: #9fc376;
+  border: none;
+}
+
+.carousel img {
+  object-fit: cover;
+  height: 80vh;
+}
+
+.offcanvas {
+  background-color: #e9ecef;
+}

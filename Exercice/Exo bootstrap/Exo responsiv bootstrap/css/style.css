@@ -1,0 +1,27 @@
+.navbar .container {
+  padding-left: 0.2rem;
+  padding-right: 0.4rem;
+}
+
+.navbar a {
+    margin: 0.3rem;
+}
+footer form {
+    max-width: 300px;
+    padding: 0.5rem 0;
+}
+
+footer input[type="email"] {
+    height: 30px;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.5rem;
+}
+
+footer label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+footer {
+    padding: 0.5rem 0;
+}

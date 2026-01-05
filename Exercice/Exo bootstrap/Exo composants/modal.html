@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../Exo composants/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Exo composants/css/style.css" rel="stylesheet" />
+    <script src="../Exo composants/js/bootstrap.min.js"></script>
+    <title>Exo 4 - Modal</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+        <div class="collapse mx-auto" id="navbarToggleExternalContent">
+          <div class="row text-center">
+            <a href="cards.html" class="nav-item text-dark">Les cards</a>
+            <a href="caroussel.html" class="nav-item text-dark">Le caroussel</a>
+            <a href="modal.html" class="nav-item text-dark">La modal</a>
+            <a href="offcanvas.html" class="nav-item text-dark">Offcanvas</a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container text-center py-5">
+      <button 
+      type="button" 
+      class="btn btn-primary" 
+      data-bs-toggle="modal" 
+      data-bs-target="#loginModal">
+      Connexion
+      </button>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Connexion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="login" class="form-label">Identifiant</label>
+                <input type="text" class="form-control" id="login" placeholder="Entrez votre identifiant">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+              </div>
+              <button type="submit" class="btn btn-success w-100">Se connecter</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo responsiv</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="text-center mb-2">
+
+        <h1 class="h1">Ma première page Bootstrap 5 h1</h1>
+        <p>En redimensionnant la page dans le navigateur, on voit le responsiv en action !</p>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container flex-row justify-content-lg-start">
+                <div class="collapse d-lg-block col-12 col-lg-3" id="navbarToggleExternalContent">
+                    <div class="d-flex flex-lg-row flex-column text-center text-lg-start ">
+                        <a href="#" class="text-white text-decoration-none">Lien 1</a>
+                        <a href="#" class="text-white text-decoration-none">Lien 2</a>
+                        <a href="#" class="text-white text-decoration-none">Lien 3</a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+    </header>
+    <main class="container">
+        <div class="row">
+            <section class="col col-lg-4" id="about">
+                <article class="text-center">
+                    <h2 class="h2">A propos de moi h2</h2>
+                    <p><b>Ma photo</b></p>
+                    <img src="https://lipsum.app/random/400x300" alt="" class="mw-100">
+                    <a href="#" class="text-secondary text-decoration-none">
+                        <p class="text-nowrap overflow-hidden">This is a truncate texte with href This is a truncate
+                            texte
+                            with href This is a truncate texte with href This is a truncate texte with href</p>
+                    </a>
+                </article>
+                <article id="links">
+                    <h2 class="h2 text-center">Quelques liens h2</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 h5">
+                            <a class="text-dark text-decoration-none">
+                                <p>Instagram h5</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 h5">
+                            <a class="text-dark text-decoration-none">
+                                <p>Linkedin h5</p>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 h5">
+                            <a class="text-dark text-decoration-none">
+                                <p>Facebook h5</p>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section  class="col col-lg-8" id="articles">
+                <article>
+                    <h2 class="h2">Un grand titre h2</h2>
+                    <h3 class="h5">Un sous-titre taille h5, 18 sept. 2020</h3>
+                    <img src="https://lipsum.app/random/1600x300" alt="" class="mw-100">
+                    <p>Nulla facilisi. Aliquam eleifend nibh est, quis vulputate dolor facilisis eu. Aenean massa augue, tempus quis nulla a, malesuada dictum felis. 
+                        Vestibulum non dolor id ipsum cursus blandit in vitae nunc. Curabitur commodo odio vitae neque aliquam, vel suscipit sapien accumsan. 
+                        Curabitur interdum tristique enim. Donec euismod ex quis iaculis.</p>
+                </article>
+                <article>
+                    <h2 class="h2">Un grand titre h2</h2>
+                    <h3 class="h5">Un sous-titre taille h5, 18 sept. 2020</h3>
+                    <img src="https://lipsum.app/random/1600x300" alt="" class="mw-100">
+                    <p>Nulla facilisi. Aliquam eleifend nibh est, quis vulputate dolor facilisis eu. Aenean massa augue, tempus quis nulla a, malesuada dictum felis. 
+                        Vestibulum non dolor id ipsum cursus blandit in vitae nunc. Curabitur commodo odio vitae neque aliquam, vel suscipit sapien accumsan. 
+                        Curabitur interdum tristique enim. Donec euismod ex quis iaculis.</p>
+                </article>
+                <article>
+                    <h2 class="h2">Un grand titre h2</h2>
+                    <h3 class="h5">Un sous-titre taille h5, 18 sept. 2020</h3>
+                    <img src="https://lipsum.app/random/1600x300" alt="" class="mw-100">
+                    <p>Nulla facilisi. Aliquam eleifend nibh est, quis vulputate dolor facilisis eu. Aenean massa augue, tempus quis nulla a, malesuada dictum felis. 
+                        Vestibulum non dolor id ipsum cursus blandit in vitae nunc. Curabitur commodo odio vitae neque aliquam, vel suscipit sapien accumsan. 
+                        Curabitur interdum tristique enim. Donec euismod ex quis iaculis.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="container-fluid bg-dark text-center text-white">
+        <form class="mx-auto d-flex flex-column justify-content-center">
+            <label for="newsletter" class=" mb-2">Inscription à notre newsletter</label>
+            <input id="newsletter" type="email" name="newsletter" placeholder="name@example.com" class="form-control">
+        </form>
+        <div class="w-100 row row-cols-1 row-cols-lg-2">
+            <a href="#" class=" text-white text-decoration-none">Mentions Légales</a>
+            <a href="https://lamanu.fr/campus/le-havre/" class=" text-white text-decoration-none">Site by La Manu</a>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

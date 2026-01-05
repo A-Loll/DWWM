@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucles</title>
+</head>
+<body>
+    <script>
+
+    // Exercice 1 A l'aide d'une boucle, afficher dans la console toutes les années entre 2020 et 2030.
+
+    for (let annee=2021; annee<2030 ; annee++) {
+        console.log(annee);
+    }
+
+    // Exercice 2 A l'aide d'une boucle afficher dans la console tous les nombres de 0 à 100. 
+    // Pour chaque multiple de 7, les remplacer par "x est un multiple de 7"
+
+    for (let nombre=0; nombre<=100; nombre++) {
+        let texte=nombre;
+        if (nombre%7==0) {
+            texte+=" est un multiple de 7";
+        }
+        console.log(texte);
+    }
+
+    // Exercice 3 Soit le tableau suivant : 
+    // const languages = ['Javascript', 'Python', 'PHP', 'Java', 'SQL' ]; 
+    // Dans la console, afficher individuellement, tous les éléments du tableau "languages".
+
+    const languages = ['Javascript', 'Python', 'PHP', 'Java', 'SQL' ];
+
+    for (const language of languages) {
+        console.log(language);
+    }
+
+    // Exercice 4 Soit le tableau suivant : 
+    // const days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']; 
+    // Afficher dans la console tous les éléments du tableau "days" en précisant le numéro du jour 
+    // (1: Lundi, 2: Mardi...)
+
+    const days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+
+    for (let i=0; i<days.length ; i++) {
+        console.log((i+1)+": "+days[i]);
+        console.log(`${i+1}: ${days[i]}`);
+    }
+
+    // Exercice 5 Créer une variable "day" contenant une valeur aléatoire comprise entre 1 et 365.
+    // Dans la console afficher "Jour {x} de l'année.' tant que la valeur de "day" n'est pas atteinte. 
+    // Quand la valeur de "day" est atteinte, afficher dans la console : 'Jour x atteint'.
+
+    const day=Math.trunc(Math.random()*365)+1;
+
+    let d=1;
+    while (d<day) {
+        console.log(`Jour ${d++} de l'année`);
+    }
+    console.log(`Jour ${day} atteint`);
+
+    // Exercice 6 Créer deux variables "firstNumber" et "secondNumber". 
+    // Leur donner une valeur comprise entre 1 et 10. 
+    // Tant que le résultat de la multiplication des deux nombres est inférieur à 250: 
+    //  Afficher le résultat dans la console. 
+    //  Assigner le résultat à secondNumber
+
+    let firstNumber=Math.trunc(Math.random()*10)+1;
+    let secondNumber=Math.trunc(Math.random()*10)+1;
+    do {
+        let resultat=firstNumber*secondNumber;
+        console.log(`${firstNumber} x ${secondNumber} = ${resultat}`);
+        secondNumber=resultat;
+    } while (resultat<250)
+
+    </script>
+</body>
+</html>
